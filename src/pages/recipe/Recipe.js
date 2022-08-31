@@ -11,7 +11,7 @@ export default function Recipe() {
   const { mode } = useTheme();
 
   return (
-    <div className={`${styles.recipe} ${styles.mode}`}>
+    <div className={`${styles.recipe} ${styles[mode]}`}>
       {isPending && <div className="loading">Loading...</div>}
       {error && <div className="error">{error}</div>}
       {recipe && (
