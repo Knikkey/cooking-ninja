@@ -13,7 +13,7 @@ export default function Navbar() {
         <Link to="/" className={styles.brand}>
           Cooking Ninja
         </Link>
-        <Searchbar />
+        {/* <Searchbar /> */}
         <Link to="/create">Create Recipe</Link>
       </nav>
     </div>
